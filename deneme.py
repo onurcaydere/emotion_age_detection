@@ -30,7 +30,7 @@ while True:
         prediction2=model.predict(cropped_img)
         
         if(prediction2<0.5):
-            cv2.putText(frame,"Kadin",(det.right(),det.top()),cv2.FONT_HERSHEY_SIMPLEX, 0.9, (255, 0, 0), 3, cv2.LINE_AA)
+            cv2.putText(frame,"Erkek",(det.right(),det.top()),cv2.FONT_HERSHEY_SIMPLEX, 0.9, (255, 0, 0), 3, cv2.LINE_AA)
         else:
             cv2.putText(frame,"Kadin",(det.right(),det.top()),cv2.FONT_HERSHEY_SIMPLEX, 0.9, (255, 0, 0), 3, cv2.LINE_AA)
         cv2.putText(frame, emotion_dict[int(np.argmax(prediction))], (det.left()+25, det.bottom()+25), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 255, 0), 1, cv2.LINE_AA)
