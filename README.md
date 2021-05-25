@@ -1,2 +1,2 @@
-# emotion_age_detection 
+# emotion_gender_detection 
 Deep Learn CNN kullanılarak alınan görüntüden Duygu-Cinsiyet tahmini yapılmıştır.
